@@ -1,0 +1,47 @@
+TOPIC-01
+POSITVE OR NEGATIVE
+
+#include<stdio.h>
+int main()
+{
+  int a;
+  scanf("%d",&a);
+  if (a>0)
+  printf("number is %d: positve",a);
+  else if(a<0) 
+  printf("number is %d: negative",a);
+  else 
+  printf("number is 0");
+}
+
+------------------------------------------------------------------------------------------------------------
+TOPIC-02
+FINDING THE GREATEST NUMBER
+
+/ / Greatest Of Two Number / /
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+    if(a>b)
+    printf("a");
+    else
+    printf("b");
+}
+*********************************************************************
+/ / Greatest Of Three Number / /
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+    if((a>b)&&(a>c))
+    printf("a");
+    else if(b>c)
+    printf("b");
+    else
+    printf("c");
+}
+----------------------------------------------------------------------------------------------------
+topic-03
