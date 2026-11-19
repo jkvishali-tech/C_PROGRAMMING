@@ -10,5 +10,119 @@ int main()
     printf("%d\n",i);
 }
 
------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
 TOPIC-02
+FACTORIAL OF A NUMBER [FOR LOOP]
+
+#include<stdio.h>
+int main()
+{
+    int n,fact=1,i;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    fact=fact*i;
+    printf(" %d",fact);
+}
+
+------------------------------------------------------------------------------------------------------------
+TOPIC-03
+FACTORS OF A NUMBER [FOR LOOP]
+
+#include<stdio.h>
+int main()
+{
+    int n,i;
+    scanf("%d",&n);
+    for(i=1;i<n;i++)
+    {if (n%i==0)
+    printf("%d",i);
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------
+TOPIC-03
+SUM OF TWO NUMBERS [FOR LOOP]
+
+#include<stdio.h>
+int main()
+{ 
+    int a,b,sum=0,i;
+    scanf("%d%d",&a,&b);
+    for(i=a;i<=b;i++)
+    sum = sum+i;
+    printf("%d",sum);
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+TOPIC-04
+MULTIPLIES OF A NUMBER [FOR LOOP]
+
+#include<stdio.h>
+int main()
+{
+    int n,t,i;
+    scanf("%d%d",&n,&t);
+    for(i=1;i<=n;i++)
+    printf("%d * %d = %d\n",i,t,i*t);
+}
+
+---------------------------------------------------------------------------------------------------------------------------
+TOPIC-05
+PRIME NUMBER [FOR LOOP]
+
+#include<stdio.h>
+int main()
+{
+    int n,i,c=0;
+    scanf("%d",&n);
+    if(n==1)
+    {
+        printf("Neither prime nor composite number");
+        return 0;
+    }
+    for(i=2;i<=n/2;i++)
+    {
+        if(n%i==0) 
+        {c++;
+        printf("not a prime number");
+        break;
+        }
+    }
+    if(c==0)
+    printf("prime number");
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------
+TOPIC-06
+COUNTING NO.OF.DIGITS [WHILE LOOP]
+
+ #include<stdio.h>
+ int main()
+ {
+     int n,c=0;
+     scanf("%d",&n);
+     while(n!=0)
+     {
+         n=n/10;
+         c++;
+     }
+     printf("%d",c);
+ }
+
+----------------------------------------------------------------------------------------------------------------------------------------
+TOPIC-07
+SUM OF A NUMBER [WHILE LOOP]
+
+#include<stdio.h>
+int main()
+{
+    int n,sum=0,d;
+    scanf("%d",&n);
+    while(n!=0)
+    {
+        d=n%10;
+        sum=sum+d;
+        n=n/10;
+    }
+    printf("%d",sum);
+}
