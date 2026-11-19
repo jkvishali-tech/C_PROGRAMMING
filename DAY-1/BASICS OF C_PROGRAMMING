@@ -1,4 +1,4 @@
-TOPIC: 1
+TOPIC-01
 DISPLAYING THE INTEGER
 
 #include<stdio.h>
@@ -9,7 +9,7 @@ int main()
     }
 
 -------------------------------------------------------------------------------
-TOPIC: 2
+TOPIC-02
 DISPLAY FLOAT
 
 #include<stdio.h>
@@ -21,7 +21,7 @@ int main()
 }
 
 --------------------------------------------------------------------------------
-TOPIC: 3
+TOPIC-03
 ESCAPE SEQUENCE
 
 #include<stdio.h>
@@ -43,7 +43,7 @@ int main()
 }
 
 ----------------------------------------------------------------------------------
-TOPIC: 4
+TOPIC-04
 SUM OF 2 NUMBERS
 
 #include<stdio.h>
@@ -56,7 +56,7 @@ int main()
 }
 
 ------------------------------------------------------------------------------------
-TOPIC: 5
+TOPIC-05
 UNIT DIGITS OF GIVEN NUMBER
 
 #include<stdio.h>
@@ -68,7 +68,7 @@ int main()
 }
 
 -------------------------------------------------------------------------------------
-TOPIC: 6
+TOPIC-06
 FORKED FROM NULL
 
 #include<stdio.h>
