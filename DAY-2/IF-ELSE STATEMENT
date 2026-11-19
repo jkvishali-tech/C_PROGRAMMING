@@ -43,5 +43,60 @@ int main()
     else
     printf("c");
 }
+
 ----------------------------------------------------------------------------------------------------
-topic-03
+TOPIC-03
+ODD OR EVEN
+
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    if(a%2 ==0)
+    printf("even");
+    else
+    printf("odd");
+}
+
+----------------------------------------------------------------------------------------------------------
+TOPIC-04
+DIVISIBLE OF A NUMBER
+
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    if(a%3 == 0)
+    printf("it is divisible by 3");
+    else
+    printf("it is not divisible by 3");
+}
+
+--------------------------------------------------------------------------------------------------------------
+TOPIC-05
+FINDING THE LEAP YEAR
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    if((a%400==0) || (a%4==0 && a%100!=0))
+    printf("leap year");
+    else
+    printf("not a leap year");
+}
+
+----------------------------------------------------------------------------------------------------------------
+TOPIC-06
+PRINTING HIHELLO USING IF-STATEMENT
+
+{
+    int a;
+    scanf("%d",&a);
+    if(a%3 == 0)
+    printf("hi");
+    if(a%15 == 0)
+    printf("hello");
+    }
