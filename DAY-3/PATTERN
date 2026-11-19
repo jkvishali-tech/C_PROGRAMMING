@@ -1,0 +1,172 @@
+TOPIC-01
+BASES OF A PATTERN
+
+/ / Base-01 / /
+#include<stdio.h>
+int main()
+{
+    int n,row,col;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+        for(col=0;col<n;col++)
+        printf("*");
+    }
+************************************************************
+/ / Base-02 / /
+#include<stdio.h>
+int main()
+{
+    int n,row,col;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+        for(col=0;col<row;col++)
+        printf("*");
+    }
+***************************************************************
+/ / Base-03 / /
+#include<stdio.h>
+int main()
+{
+    int n,row,col;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+        for(col=0;col<n-row;col++)
+        printf("*");
+    }
+*****************************************************************
+/ / Base-04 / /
+#include<stdio.h>
+int main()
+{
+    int n,row,col;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+        for(col=0;col<2*row-1;col++)
+        printf("*");
+    }
+}
+
+------------------------------------------------------------------------------------------------
+TOPIC-02
+COMBINATION OF TWO BASES
+
+/ / Base-01;Base-02 / /
+#include<stdio.h>
+int main()
+{
+    int n,row,col;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+        for(col=0;col<=row-1;col++)
+        printf(" ");
+        for(col=0;col<n;col++)
+        printf("*");
+    }
+}
+***************************************************************
+/ / Base-01;Base-03 / /
+#include<stdio.h>
+int main()
+{
+    int n,col,row;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+        for(col=0;col<n-row;col++)
+        printf(" ");
+        for(col=0;col<n;col++)
+        printf("*");
+    }
+}
+****************************************************************
+/ / Base-02;Base-03 / /
+#include<stdio.h>
+int main()
+{
+    int n,col,row;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+        for(col=0;col<n-row;col++)
+        printf(" ");
+        for(col=0;col<=row;col++)
+        printf("*");
+    }
+}
+
+--------------------------------------------------------------------------------------------------------
+TOPIC-03
+COMBINATION OF THREE BASES
+
+/ / Base-02;Base-03;Base-02 / /
+#include<stdio.h>
+int main()
+{
+    int n,col,row;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+        for(col=0;col<=row;col++)
+        printf("*");
+        for(col=0;col<n-row;col++)
+        printf(" ");
+        for(col=0;col<=row;col++)
+        printf("*");
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------
+TOPIC-04
+SQUARE NUMBER PATTERN
+
+/ / Repeating Row Numbers / /
+#include<stdio.h>
+int main()
+{
+    int n,col,row;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+        for(col=0;col<n;col++)
+        printf("1");
+    }
+}
+********************************************************************
+/ / Counting Column Numbers / /
+#include<stdio.h>
+int main()
+{
+    int n,row,i,col;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+        for(col=0;col<n;col++)
+        printf("%d",col+1);
+    }
+}
+**********************************************************************
+/ / Right-Angled Number Triangle Pattern / /
+#include<stdio.h>
+int main()
+{
+    int n,row,i,col;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+        for(col=0;col<=row;col++)
+        printf("%d",col+1);
+    }
+}
+************************************************************************
+
+
+
+
+
+
+
